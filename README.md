@@ -1,11 +1,11 @@
-# Transition-Aware Multi-Activity Knowledge Tracing (TAMKOT)
+# Exploring Simultaneous Knowledge and Behavior Tracing (Pareto-TAMKOT)
 Code for our paper:
 
  S. Zhao, and S. Sahebi. Exploring Simultaneous Knowledge and Behavior Tracing. In Proceedings of The 13th International Conference on Educational Data Mining (EDM 2024).
 
 If you have any questions, please email szhao2@albany.edu
 
-## TAMKOT Network Architecture:
+## Pareto-TAMKOT Network Architecture:
 
 ![Pareto-tamkot](model.png)
 
@@ -25,8 +25,8 @@ matplotlib
 ### How to install and run
 
 ```angular2html
-git clone https://github.com/persai-lab/2024-EDM-Pareto-TAMKOT-PersaiLab
-cd 2024-EDM-Pareto-TAMKOT-PersaiLab
+git clone https://github.com/persai-lab/2024-EDM-Pareto-TAMKOT
+cd 2024-EDM-Pareto-TAMKOT
 conda env create -f environment.yml
 source init_env.sh
 python run.py
@@ -38,7 +38,7 @@ python run.py
 Please cite our paper if you use this code in your own work:
 
 ```
-@inproceedings{zhao2022tamkot,
+@inproceedings{zhao2022exploring,
   title={Exploring Simultaneous Knowledge and Behavior Tracing},
   author={Zhao, Siqian and Sahebi,Shaghayegh},
   booktitle={Proceedings of The 13th International Conference on Educational Data Mining (EDM 2024)},
