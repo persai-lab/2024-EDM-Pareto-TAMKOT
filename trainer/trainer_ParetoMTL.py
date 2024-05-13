@@ -118,7 +118,7 @@ class trainer_ParetoMTL(object):
             self.current_epoch += 1
 
         torch.save(self.model.state_dict(),
-                   'saved_model/{}/{}/sl_{}_np_{}_pi_{}_eq_{}_ea_{}_el_{}_nc_{}_kd_{}_vd_{}_sd_{}_lq_{}_ll_{}_wd_{}_fold_{}.pkl'.format(
+                   'saved_model/{}/{}/np_{}_pi_{}_sl_{}_eq_{}_ea_{}_el_{}_hs_{}_wd_{}_fold_{}.pkl'.format(
                        self.config.data_name,
                        self.config.model_name,
                        self.config.num_pref,
@@ -127,12 +127,7 @@ class trainer_ParetoMTL(object):
                        self.config.embedding_size_q,
                        self.config.embedding_size_a,
                        self.config.embedding_size_l,
-                       self.config.num_concepts,
-                       self.config.key_dim,
-                       self.config.value_dim,
-                       self.config.summary_dim,
-                       self.config.lambda_q,
-                       self.config.lambda_l,
+                       self.config.hidden_size,
                        self.config.weight_decay,
                        self.config.fold))
 

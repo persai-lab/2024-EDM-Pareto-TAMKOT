@@ -40,7 +40,7 @@ def paretoMLT_exp(config):
 
 
 
-def ednet():
+def pareto_TAMKOT():
     config = {
         "data_name": 'ednet',
         "model_name": 'TAMKOT',
@@ -55,10 +55,10 @@ def ednet():
         "seed": 1024,
 
         "n_tasks": 2,
-        "num_pref": 5,
+        "num_pref": 5, #number of dividing vector
 
         "min_seq_len": 2,
-        "max_seq_len": 100,  # the max step of RNN model
+        "max_seq_len": 100,  # the max seq length for model
         "batch_size": 32,
         "learning_rate": 0.01,
         "max_epoch": 60,
@@ -67,16 +67,7 @@ def ednet():
         "embedding_size_q": 32,
         "embedding_size_a": 32,
         "embedding_size_l": 32,
-        "num_concepts": 8,
-        "hidden_size": 16,  # hidden state size, for TAMKOT
-
-        "key_dim": 32,
-        "value_dim": 32,
-        "summary_dim": 32,
-        # 'weight_type': 0.1,
-        "lambda_q": 0.5,
-        "lambda_l": 0.5,
-
+        "hidden_size": 16,  # hidden state size
 
         "init_std": 0.2,
         "max_grad_norm": 10,
@@ -88,7 +79,7 @@ def ednet():
         "weight_decay": 0.05,
     }
     paretoMLT_exp(config)
-
+    
 
 if __name__ == '__main__':
-    ednet()
+    pareto_TAMKOT()
