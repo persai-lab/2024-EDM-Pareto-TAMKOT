@@ -1,7 +1,7 @@
 # Exploring Simultaneous Knowledge and Behavior Tracing (Pareto-TAMKOT)
 Code for our paper:
 
- S. Zhao, and S. Sahebi. Exploring Simultaneous Knowledge and Behavior Tracing. In Proceedings of The 13th International Conference on Educational Data Mining (EDM 2024).
+ S. Zhao, and S. Sahebi. Exploring Simultaneous Knowledge and Behavior Tracing. In Proceedings of The 17th International Conference on Educational Data Mining (EDM 2024).
 
 If you have any questions, please email szhao2@albany.edu
 
@@ -38,12 +38,12 @@ python run.py
 Please cite our paper if you use this code in your own work:
 
 ```
-@inproceedings{zhao2022exploring,
+@inproceedings{zhao2024exploring,
   title={Exploring Simultaneous Knowledge and Behavior Tracing},
-  author={Zhao, Siqian and Sahebi,Shaghayegh},
-  booktitle={Proceedings of The 13th International Conference on Educational Data Mining (EDM 2024)},
-  pages={},
-  year={2024},
+  author={Zhao, Siqian and Sahebi, Shaghayegh},
+  booktitle={Proceedings of the 17th International Conference on Educational Data Mining},
+  Pages={927--932},
+  year={2024}
 }
 ```
 
